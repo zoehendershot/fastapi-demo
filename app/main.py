@@ -23,3 +23,7 @@ def square(a: int):
 @app.get("/divide/{a}/{b}")
 def divide(a: int, b: int):
     return {"quotient": a / b}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy"}
