@@ -22,5 +22,5 @@ RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
 COPY ./app /code/app
 
 # Set the command to run the FastAPI app, specifying app.py
-CMD ["uvicorn", "app.app:app", "--host", "0.0.0.0", "--port", "80", "--workers", "4"]
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80", "--workers", "4"]
 
