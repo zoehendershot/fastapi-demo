@@ -5,3 +5,7 @@ pydantic
 # pymongo
 # dnspython
 # mysqlclient
+
+fastapi
+uvicorn
+mysql-connector-python
