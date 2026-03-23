@@ -29,7 +29,9 @@ jobs:
 
       # ── 7. Install dependencies ──────────────────────────────
       - name: Install dependencies
-        run: pip install -r requirements.txt
+        run: |
+          pip install -r requirements.txt
+          pip install pytest
 
       # ── 8. Run tests ─────────────────────────────────────────
       - name: Run pytest
